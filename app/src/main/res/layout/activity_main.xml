@@ -1,0 +1,109 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="#6200EA"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- Bill Amount Input -->
+    <EditText
+        android:id="@+id/billAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_bill_amount"
+        android:inputType="numberDecimal"
+        android:importantForAccessibility="yes"
+        android:autofillHints="bill"
+        android:padding="16dp"
+        tools:ignore="VisualLintTextFieldSize" />
+        android:hint="Enter tip percentage" />
+
+
+    <EditText
+        android:id="@+id/tipPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_tip_percentage"
+        android:inputType="number"
+        android:importantForAccessibility="yes"
+        android:padding="16dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Service Quality Question -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_quality_question"
+        android:paddingTop="16dp"/>
+
+    <!-- RadioGroup for Tip Selection --><![CDATA[
+    ]]><RadioGroup
+        android:id="@+id/tipOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/amazingOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amazing_option"
+            android:padding="16dp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/goodOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good_option"
+            android:padding="16dp"/>
+
+        <RadioButton
+            android:id="@+id/okOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_option"
+            android:padding="16dp"/>
+    </RadioGroup>
+
+    <!-- Round Up Tip Switch -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="16dp"/>
+
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_tip"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+
+    <!-- Tip Amount Display -->
+    <TextView
+        android:id="@+id/tipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_amount_placeholder"
+        android:paddingTop="16dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

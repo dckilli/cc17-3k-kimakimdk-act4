@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="hint_bill_amount">Enter Bill Amount</string>
+    <string name="hint_tip_percentage">Enter Tip Percentage</string>
+    <string name="calculate_tip">Calculate Tip</string>
+    <string name="service_quality_question">How would you rate our service quality?</string>
+    <string name="amazing_option">Amazing</string>
+    <string name="good_option">Good</string>
+    <string name="ok_option">OK</string>
+    <string name="enter_tip_percentage">Enter tip percentage</string>
+    <string name="tip_amount_placeholder">Tip Amount: %1$s</string>
+    <string name="invalid_input">Please enter valid numbers</string>
+
+
+
+</resources>
